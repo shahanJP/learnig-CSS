@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Scroll</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-default bg-light navbar-fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.webp"
+            alt=""
+            width="40"
+            height="34"
+            class="d-inline-block align-text-top"
+          />
+          <span class="logo">FrUIteScRo0L</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#info1">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <img src="images/main.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-right">
+              <h1><span> Fruit</span> a day Keep doctor away</h1>
+              <p>
+                Frite le na doctrie dower Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Placeat voluptatum a eaque ipsam quibusdam
+                accusantium, dolorum corrupti. Eveniet, quos ea!
+              </p>
+            </div>
+            <hr />
+            <a href="" class="btn btn-default btn-lg showcase-btn"> Eat More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="test">
+      <div class="container">
+        <p>
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+          accusamus totam ipsa corrupti aliquid perferendis nemo itaque. Quam
+          assumenda sit doloribus minima itaque! Ipsum dolore repudiandae in,
+          voluptate magnam rerum nostrum suscipit fugiat natus eveniet ex sed
+          provident, nobis minus corrupti laboriosam eius laudantium. Laudantium
+          quibusdam cum quas placeat sed magnam tempora fuga sapiente deserunt
+          neque. Numquam laudantium facilis ducimus."
+        </p>
+        <p class="quote">-Shahan A.</p>
+      </div>
+    </section>
+    <section id="info1">
+      <div class="container container2">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left">
+              <img src="images/bl2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h2>“We were planting seeds of change, the fruit of which we might never see. We had to be patient.”</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+                aliquam commodi enim ducimus id ea maiores temporibus suscipit
+                perspiciatis odit!
+              </p>
+            </div>
+            <hr />
+            <a href="" class="btn btn-default btn-lg showcase-btn"> Farms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="gallery">
+       <div class="container block">
+     <div class="row">
+               <div class="col-md-3 col-sm-12  d-flex ">
+                  <div>
+                      <img class="im-1" src="images/5.png" alt="">
+                  </div>
+                  <div>
+                    <img class="im-2" src="images/6.png" alt="">
+                </div>
+                <div>
+                    <img class="im-3" src="images/7.png" alt="">
+                </div>
+                
+               </div>
+            </div>
+       </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar',{
+            duration:2000,
+            origin:'right'
+        });
+       
+        sr.reveal('.showcase-left',{
+            duration:2000,
+            origin:'top',
+            distance:'300px'
+        });
+       
+        sr.reveal('.showcase-right',{
+            duration:2000,
+            origin:'right',
+            distance:'300px'
+        })
+        sr.reveal('.info-left',{
+            duration:2000,
+            origin:'left',
+            distance:'300px'
+        })
+    </script>
+  </body>
+</html>
